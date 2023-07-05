@@ -1,0 +1,119 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background: rgb(108,174,176);
+  background: radial-gradient(circle, rgba(108,174,176,1) 0%, rgba(221,148,233,1) 100%);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.title{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 40px;
+  color: maroon;
+}
+
+.calc{
+  width: 30%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(207,45,253,0.8026669285878414) 100%);
+  border-radius: 20px;
+}
+
+.result{
+  width: fit-content;
+  height: 50px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(161, 198, 163);
+}
+
+.inputs{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  background-color: rgb(180, 213, 202);
+  border-radius: 10px;
+  font-family: monospace;
+  font-weight: bold;
+  padding-left: 10px;
+  width: 30%;
+  height: 30px;
+  margin: 8px;
+}
+
+.buttons{
+  width: 80%;
+  height: 100px;
+  background-color: rgb(207, 183, 230);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  margin: 4px;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+}
+
+button:active {
+  transform: scale(0.91);
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: rgb(207, 193, 200);
+}
+
+.plus{
+  width: 40px;
+  height: 40px;
+  background-color: rgb(203, 113, 113);
+}
+.minus{
+  width: 40px;
+  height: 40px;
+  background-color: rgb(160, 155, 208);
+}
+.cross{
+  width: 40px;
+  height: 40px;
+  background-color: rgb(219, 182, 143);
+}
+.divide{
+  width: 40px;
+  height: 40px;
+  background-color: rgb(208, 155, 205);
+}
+
+.clear{
+  width: 50px;
+  height: 30px;
+  margin-top: 20px;
+  background-color:steelblue;
+  font-weight: bold;
+}
+
