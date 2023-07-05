@@ -39,10 +39,14 @@ const division = () => {
 }
 
 const clearing = () => {
-  setResult(0)
-  number1(0)
-  number2(0)
-}
+  setNumber1(0);
+  setNumber2(0);
+  setResult(0);
+  const inputElements = document.querySelectorAll('input[type="number"]');
+  inputElements.forEach((input) => {
+    input.value = '';
+  });
+};
 
   return (
       <div className="container">
