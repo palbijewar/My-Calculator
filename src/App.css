@@ -34,6 +34,13 @@
   border-radius: 20px;
 }
 
+@media (max-width: 766px) {
+  .calc{
+  width:100%;
+  }
+    
+  }
+
 .result{
   width: fit-content;
   height: 50px;
